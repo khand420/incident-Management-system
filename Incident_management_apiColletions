@@ -1,0 +1,179 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Incident_management_apiColletions",
+    "collectionId": "033e3207-edf3-4180-b973-29d6ac141d0d",
+    "dateExported": "2024-08-17T18:16:56.551Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "729b308d-07ac-4736-814b-cdf145175b90",
+            "colId": "033e3207-edf3-4180-b973-29d6ac141d0d",
+            "containerId": "",
+            "name": "Create Incident",
+            "url": "http://127.0.0.1:8000/api/incidents/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-08-16T18:04:33.036Z",
+            "modified": "2024-08-17T07:19:41.898Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "token 3a58ffacae5ca74111f19ae43601d1c80f6ac688"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"reporter_type\": \"Enterprise\",\r\n  \"details\": \"Incident description here\",\r\n  \"priority\": \"Medium\",\r\n  \"status\": \"In Progress\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "01019ae0-56ef-4083-a0f6-1579f0fed71f",
+            "colId": "033e3207-edf3-4180-b973-29d6ac141d0d",
+            "containerId": "",
+            "name": "register",
+            "url": "http://127.0.0.1:8000/api/register/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-17T04:50:04.219Z",
+            "modified": "2024-08-17T06:23:34.148Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (htts://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test3\",\n  \"email\": \"3t@gmail.com\",\n  \"password\": \"123\",\n  \"phone_number\": \"123456783\",\n  \"address\": \"cp\",\n  \"pin_code\": \"110001\",\n  \"city\": \"New Delhi\",\n  \"country\": \"India\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "604fd2ba-bef1-4bcd-9f0d-cf26ff753c07",
+            "colId": "033e3207-edf3-4180-b973-29d6ac141d0d",
+            "containerId": "",
+            "name": "View Incidents",
+            "url": "http://127.0.0.1:8000/api/incidents/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-08-17T07:21:14.474Z",
+            "modified": "2024-08-17T07:21:35.074Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "token 3a58ffacae5ca74111f19ae43601d1c80f6ac688"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "75dfa3c5-0461-4f5e-8dfb-26e4130f942b",
+            "colId": "033e3207-edf3-4180-b973-29d6ac141d0d",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:8000/api/login/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-08-17T04:51:24.433Z",
+            "modified": "2024-08-17T06:24:29.271Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (htts://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"test3\",\n  \"password\": \"123\"\n\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "f1666274-38a0-409a-abd1-1267007c656d",
+            "colId": "033e3207-edf3-4180-b973-29d6ac141d0d",
+            "containerId": "",
+            "name": "Edit Incident",
+            "url": "http://127.0.0.1:8000/api/incidents/1/",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-08-17T07:23:58.772Z",
+            "modified": "2024-08-17T07:28:07.378Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "token 3a58ffacae5ca74111f19ae43601d1c80f6ac688"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"details\": \"Updated incident description\",\r\n    \"priority\": \"Medium\",\r\n    \"status\": \"In Progress\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d1b0696b-578e-4d87-98cd-4db34502e1fa",
+            "colId": "033e3207-edf3-4180-b973-29d6ac141d0d",
+            "containerId": "",
+            "name": "search",
+            "url": "http://127.0.0.1:8000/api/incidents/search/RMG397582024/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-08-17T07:24:50.196Z",
+            "modified": "2024-08-17T07:26:08.329Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "token 3a58ffacae5ca74111f19ae43601d1c80f6ac688"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        }
+    ],
+    "ref": "VEoZMMdu5FNctUSLAkjWmbvn8aWf8BXVpbDME6YDxYNxg5hLGMWqs5itUkrJqdSxtNVuBr7n7QrbcshUJy5pOQ"
+}
